@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Andy
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: 3471950654411319156, guid: 8ad4ad28f65f9a3409e48fde874db597, type: 3}
+  correctQuestion: 3
+  shouldHire: 1
+  answer1: I make sure my prep station is completely organized before dinner service
+    begins.
+  answer2: I always ensure the food is cooked to the proper temperature, even if
+    the dining room is full.
+  answer3: I stay calm and agreeable. I'm patient with everyone and try to make the
+    kitchen comfortable so we can actually focus.
+  correctFeedback: "Great call! \nHe is a classic type B personality. He bring calm
+    vibes and high quality to the kitchen!"
+  wrongFeedback: "Yikes! \nYou mistook his chill vibe for laziness. He is a patient
+    type B worker who prioritizes quality over speed."

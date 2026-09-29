@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Felix
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: -7916257957308796088, guid: 2fc4e84ba697ec64eac45b644cd05f9d, type: 3}
+  correctQuestion: 2
+  shouldHire: 0
+  answer1: I analyzed the vendor contract line-by-line, found the loophole on page
+    14 regarding standard tariffs, and rewrote the terms to save 20%.
+  answer2: The ends justify the means. If I have to manipulate a colleague or bypass
+    a silly rule to hit my targets, I'll do it without hesitation.
+  answer3: I maintain a competitive but professional dynamic with the rest of the
+    sales team.
+  correctFeedback: "Phew! \nYou caught a toxic machiavellian who would destroy team
+    trust and manipulate people just to win."
+  wrongFeedback: "Danger! \nYou just hired a machiavellian who manipulates coworkers
+    and breaks trust to hit targets."

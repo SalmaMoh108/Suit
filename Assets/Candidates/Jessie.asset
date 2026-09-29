@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Jessie
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: 1696180010942319991, guid: faf09e5b5ab105f4fac230447e53704a, type: 3}
+  correctQuestion: 2
+  shouldHire: 1
+  answer1: I bypass thermal limits by soldering joints at a 45-degree angle and rerouting
+    the copper wiring.
+  answer2: I will shape the work situation to my advantage to innovate, but I never
+    compromise the product's safety or integrity.
+  answer3: I usually share my prototypes with the team and ask for their feedback
+    to improve it.
+  correctFeedback: "Spot on! \nShe has a proactive personality and loves to innovate.
+    A great, driven R&D hire!"
+  wrongFeedback: "Oops! \nYou missed her proactive personality. She isn't toxic;
+    she just bends the rules to build cool things!"

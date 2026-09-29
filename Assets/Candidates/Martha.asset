@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Martha
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: -1710235587022476073, guid: 10aacd7547a820e44b8c5433284bfcbe, type: 3}
+  correctQuestion: 2
+  shouldHire: 0
+  answer1: I implemented a new logistics tracking system to monitor our supply shipments
+    in real-time.
+  answer2: I push everyone to their breaking point. If quality drops or people get
+    angry, whatever. We just need to hit the numbers as fast as humanly possible.
+  answer3: I delegate tasks based on everyone's current bandwidth to keep the workflow
+    moving.
+  correctFeedback: "Smart move! \nShe is an extreme type A who sacrifices quality
+    and burns out teams to hit numbers."
+  wrongFeedback: "Bad call! \nYou hired a toxic type A who pushes everyone to the
+    breaking point just to go faster."

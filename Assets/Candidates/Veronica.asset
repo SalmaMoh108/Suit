@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Veronica
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: -4744224114939671522, guid: 45da152ce591fc6469e9156ef513962e, type: 3}
+  correctQuestion: 1
+  shouldHire: 1
+  answer1: I went frame-by-frame in the animation sheet, adjusted the collider bounds
+    by two pixels, and synced the rigidbodies.
+  answer2: I try to complete my testing queue before the end of the day so we don't
+    fall behind.
+  answer3: I communicate my bug reports through the official tracking software so
+    the devs can read them.
+  correctFeedback: "Good eye! \nHer anxiety and hyper-vigilance actually makes her
+    an incredible bug-catcher!"
+  wrongFeedback: "Missed a good one! \nHer anxiety is a superpower for QA. Her hyper-vigilance
+    means she keeps a close eye on the small details."

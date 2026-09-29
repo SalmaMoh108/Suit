@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Dexter
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: 8880602654280076989, guid: 1107212e82c72594ab88f66641796a29, type: 3}
+  correctQuestion: 3
+  shouldHire: 0
+  answer1: I track client complaints in our CRM software and follow up within 24
+    hours.
+  answer2: I prioritize the most urgent client accounts first to ensure we hit our
+    quarterly metrics.
+  answer3: I just figure out what the boss wants to see and act exactly like that.
+    My true personality doesn't matter as long as I look good in public.
+  correctFeedback: "Good catch! \nHe is a high self-monitor who just fakes his personality
+    to look good. Zero loyalty!"
+  wrongFeedback: "Fooled by the charm! \nHe is a high self-monitor who acts completely
+    differently in private."

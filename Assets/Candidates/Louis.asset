@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d8ee7ca9ee542348946c0d908a53484, type: 3}
+  m_Name: Louis
+  m_EditorClassIdentifier: Assembly-CSharp::Candidate
+  character: {fileID: 2037129659040613073, guid: 8195033ddbaf2cb4a9a53b68d65fde01, type: 3}
+  correctQuestion: 3
+  shouldHire: 0
+  answer1: I audited the supply chain, found the $40k discrepancy in the Q3 logistics
+    report, and recommended a 10% budget cut.
+  answer2: I organize my deliverables by quarter to ensure we meet the executive
+    board's expectations.
+  answer3: I expect them to serve my needs. If anyone threatens my position, I make
+    sure management knows they're incompetent.
+  correctFeedback: 'Thank you for having common sense!
+
+    He is a total narcissist
+    who looks down on everyone else and ruins team morale. Plus HE IS A CHILD.'
+  wrongFeedback: Did you seriously just hire a child just because he is cute and
+    is wearing a suit?
