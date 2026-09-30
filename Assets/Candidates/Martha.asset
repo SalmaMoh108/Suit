@@ -18,7 +18,8 @@ MonoBehaviour:
   answer1: I implemented a new logistics tracking system to monitor our supply shipments
     in real-time.
   answer2: I push everyone to their breaking point. If quality drops or people get
-    angry, whatever. We just need to hit the numbers as fast as humanly possible.
+    angry, that's irrelevant. We just need to hit the numbers as fast as humanly
+    possible.
   answer3: I delegate tasks based on everyone's current bandwidth to keep the workflow
     moving.
   correctFeedback: "Smart move! \nShe is an extreme type A who sacrifices quality

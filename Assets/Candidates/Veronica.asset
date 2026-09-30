@@ -15,8 +15,8 @@ MonoBehaviour:
   character: {fileID: -4744224114939671522, guid: 45da152ce591fc6469e9156ef513962e, type: 3}
   correctQuestion: 1
   shouldHire: 1
-  answer1: I went frame-by-frame in the animation sheet, adjusted the collider bounds
-    by two pixels, and synced the rigidbodies.
+  answer1: I spent the weekend writing automated scripts to test new API end points.
+    I managed to crash the staging server, but I would say it's a productive monday.
   answer2: I try to complete my testing queue before the end of the day so we don't
     fall behind.
   answer3: I communicate my bug reports through the official tracking software so

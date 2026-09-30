@@ -21,7 +21,7 @@ MonoBehaviour:
     the dining room is full.
   answer3: I stay calm and agreeable. I'm patient with everyone and try to make the
     kitchen comfortable so we can actually focus.
-  correctFeedback: "Great call! \nHe is a classic type B personality. He bring calm
+  correctFeedback: "Great call! \nHe is a classic type B personality. He brings calm
     vibes and high quality to the kitchen!"
   wrongFeedback: "Yikes! \nYou mistook his chill vibe for laziness. He is a patient
     type B worker who prioritizes quality over speed."

@@ -17,8 +17,8 @@ MonoBehaviour:
   shouldHire: 0
   answer1: I analyzed the vendor contract line-by-line, found the loophole on page
     14 regarding standard tariffs, and rewrote the terms to save 20%.
-  answer2: The ends justify the means. If I have to manipulate a colleague or bypass
-    a silly rule to hit my targets, I'll do it without hesitation.
+  answer2: I'll do what needs to be done. If I have to manipulate a colleague or
+    bypass a silly rule to hit my targets, I'll do it without hesitation.
   answer3: I maintain a competitive but professional dynamic with the rest of the
     sales team.
   correctFeedback: "Phew! \nYou caught a toxic machiavellian who would destroy team

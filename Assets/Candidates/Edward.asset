@@ -16,9 +16,10 @@ MonoBehaviour:
   correctQuestion: 2
   shouldHire: 1
   answer1: I review the financial logs line by line to ensure the math is correct.
-  answer2: I never break the rules. If a deadline is tight, I work efficiently within
-    the guidelines. Standards exist for a reason.
-  answer3: maintain a professional relationship with all departments during my audits.
+  answer2: I never break the rules. If a deadline is tight, I work as efficiently
+    as I can within the guidelines. Standards exist for a reason.
+  answer3: I maintain a professional relationship with all departments during my
+    audits.
   correctFeedback: "Nice! \nHe is highly thorough and conventional. Perfect for keeping
     audits strict and organized!"
   wrongFeedback: "Big mistake! \nYou thought he was unfit, but he has the exact conventional

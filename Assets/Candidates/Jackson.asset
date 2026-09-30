@@ -15,8 +15,8 @@ MonoBehaviour:
   character: {fileID: 8762114517125209482, guid: f69c1a0bb6ded084d875e1ec55bf5ce4, type: 3}
   correctQuestion: 1
   shouldHire: 0
-  answer1: It was a team effort. I oversaw the synergy, motivated the developers,
-    and managed the paradigm shift.
+  answer1: It was a team effort. I oversaw multiple projects and motivated the team
+    to work hard.
   answer2: I try to inspire the team to meet our launch dates, even when things get
     tough.
   answer3: I hold open-door brainstorming sessions to get everyone aligned on the
