@@ -7,67 +7,83 @@ using TMPro;
 public class Manager : MonoBehaviour
 {
     [Header("UI Elements")]
-    public GameObject mainPanel;
-    public GameObject questionPanel;
-    public GameObject dialoguePanel;
-    public TextMeshProUGUI dialogueText;
-    public GameObject mainMenuPanel;
+    [SerializeField] GameObject mainPanel;
+    [SerializeField] GameObject questionPanel;
+    [SerializeField] GameObject dialoguePanel;
+    [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] GameObject mainMenuPanel;
     
     [Header("Feedback UI")]
-    public GameObject feedbackOverlay;
-    public Image stampImage;
-    public TextMeshProUGUI feedbackText;
-    public Sprite stampCorrect; 
-    public Sprite stampWrong;   
+    [SerializeField] GameObject feedbackPanel;
+    [SerializeField] Image stampImage;
+    [SerializeField] TextMeshProUGUI feedbackText;
+    [SerializeField]  Sprite stampCorrect; 
+    [SerializeField]  Sprite stampWrong;   
 
     [Header("Card Animation")]
-    public Image candImage;
-    public RectTransform cardTransform;
+    [SerializeField] Image candImage;
+    [SerializeField] RectTransform cardTransform;
 
     [Header("Game Logic")]
-    public List<Candidate> allCandidates;
+    [SerializeField] List<Candidate> allCandidates;
     private int currentIndex=0;
     private Candidate currentCandidate;
     private bool askedRight=false;
 
     [Header("Scoreboard")]
-    public TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI scoreText;
     private int currentScore = 0;
     private int totalEvaluated = 0; 
 
     [Header("End Game UI")]
-    public GameObject endGamePanel;
-    public TextMeshProUGUI finalScoreText;
-    public TextMeshProUGUI gradeSentenceText;
-    public Image gradeImage;
+    [SerializeField] GameObject endGamePanel;
+    [SerializeField] TextMeshProUGUI finalScoreText;
+    [SerializeField] TextMeshProUGUI gradeSentenceText;
+    [SerializeField] Image gradeImage;
 
     [Header("Grade Custom Sentences")]
-    [TextArea(2, 3)] public string sentenceA = "Promoted to CEO! You actually know how to read people.";
-    [TextArea(2, 3)] public string sentenceB = "Decent job. You hired a few psychos, but survived.";
-    [TextArea(2, 3)] public string sentenceC = "Yikes. The workplace culture is officially toxic.";
-    [TextArea(2, 3)] public string sentenceF = "WTF is this grade?! Did you just close your eyes and click?";
+    [TextArea(2, 3)] [SerializeField]  string sentenceA = "Promoted to CEO! You actually know how to read people.";
+    [TextArea(2, 3)] [SerializeField]  string sentenceB = "Decent job. You hired a few psychos, but survived.";
+    [TextArea(2, 3)] [SerializeField]  string sentenceC = "Yikes. The workplace culture is officially toxic.";
+    [TextArea(2, 3)] [SerializeField]  string sentenceF = "WTF is this grade?! Did you just close your eyes and click?";
     
     [Header("Grade Sprites")]
-    public Sprite gradeA;
-    public Sprite gradeB;
-    public Sprite gradeC;
-    public Sprite gradeF;
+    [SerializeField]  Sprite gradeA;
+    [SerializeField]  Sprite gradeB;
+    [SerializeField]  Sprite gradeC;
+    [SerializeField]  Sprite gradeF;
 
     [Header("Audio Sources")]
-    public AudioSource sfxSource;
-    public AudioClip correctSound;
-    public AudioClip wrongSound;
-    public AudioClip smashSound;
+    [SerializeField] AudioSource sfxSource;
+    [SerializeField] AudioClip correctSound;
+    [SerializeField] AudioClip wrongSound;
+    [SerializeField] AudioClip smashSound;
     
 
     [Header("Typing Effect")]
-    public float typingSpeed = 0.02f; // Lower is faster
+    [SerializeField] float typingSpeed = 0.02f; // Lower is faster
     private Coroutine typingCoroutine;
 
 
     void Start()
     {
         mainMenuPanel.SetActive(true);
+        endGamePanel.SetActive(false);
+        questionPanel.SetActive(false);
+        dialoguePanel.SetActive(false);
+        feedbackPanel.SetActive(false);
+    }
+
+    public void Backmain()
+    {
+        mainMenuPanel.SetActive(true);
+        questionPanel.SetActive(false);
+        dialoguePanel.SetActive(false);
+        feedbackPanel.SetActive(false);
+        endGamePanel.SetActive(false);
+        currentIndex = 0;
+        currentScore = 0;
+        totalEvaluated = 0;
     }
 
     public void StartGame()
@@ -91,7 +107,7 @@ public class Manager : MonoBehaviour
             cardTransform.anchoredPosition =  Vector2.zero;  // Reset the card position to center
             questionPanel.SetActive(true);
             dialoguePanel.SetActive(false);
-            feedbackOverlay.SetActive(false);
+            feedbackPanel.SetActive(false);
             askedRight = false;
             endGamePanel.SetActive(false);
         }
@@ -265,12 +281,12 @@ public class Manager : MonoBehaviour
     }
     private void ShowFeedback(bool isFullyCorrect)
     {
-        feedbackOverlay.SetActive(true);
+        feedbackPanel.SetActive(true);
         stampImage.sprite = isFullyCorrect ? stampCorrect : stampWrong;
         feedbackText.text = isFullyCorrect ? currentCandidate.correctFeedback : currentCandidate.wrongFeedback;
         if (!isFullyCorrect)
         {
-        RectTransform feedbackRect = feedbackOverlay.GetComponent<RectTransform>();
+        RectTransform feedbackRect = feedbackPanel.GetComponent<RectTransform>();
         StartCoroutine(ShakeUI(feedbackRect));
         }
     }
