@@ -4,7 +4,7 @@
 
 **Play on Itch:** [Suit](https://jesterstudio.itch.io/suit)
 
-A small project developed for a university presentation.
+A small project developed for a university presentation in 3 days.
 
 ## Visuals
 
