@@ -3,15 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class Manager : MonoBehaviour
 {
+    private Pause pauseAction;
+    private bool isPaused = false;
     [Header("UI Elements")]
     [SerializeField] GameObject mainPanel;
     [SerializeField] GameObject questionPanel;
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] GameObject mainMenuPanel;
+    [SerializeField] GameObject pausePanel;
     
     [Header("Feedback UI")]
     [SerializeField] GameObject feedbackPanel;
@@ -72,6 +76,7 @@ public class Manager : MonoBehaviour
         questionPanel.SetActive(false);
         dialoguePanel.SetActive(false);
         feedbackPanel.SetActive(false);
+        pausePanel.SetActive(false);
     }
 
     public void Backmain()
@@ -81,15 +86,54 @@ public class Manager : MonoBehaviour
         dialoguePanel.SetActive(false);
         feedbackPanel.SetActive(false);
         endGamePanel.SetActive(false);
+        pausePanel.SetActive(false);
         currentIndex = 0;
         currentScore = 0;
         totalEvaluated = 0;
+    }
+    void Awake()
+    {
+        pauseAction = new Pause();
+    }
+    void OnEnable()
+    {
+        pauseAction.Enable();
+        pauseAction.PauseMenu.pause.performed += OnPause;
+    }
+    void OnDisable()
+    {
+        pauseAction.Disable();
+        pauseAction.PauseMenu.pause.performed -= OnPause;
+    }
+    private void OnPause(InputAction.CallbackContext context)
+    {
+        if (isPaused)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            PauseGame();
+        }
+        
     }
 
     public void StartGame()
     {
         mainMenuPanel.SetActive(false);
         LoadNextCandidate();
+    }
+    public void PauseGame()
+    {
+        isPaused = true;
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f; 
+    }
+    public void ResumeGame()
+    {
+        isPaused = false;
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f; 
     }
 
     public void QuitGame()
